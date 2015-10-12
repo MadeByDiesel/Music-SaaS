@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @release.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @release.description %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @release.publisher %>
+</p>
+
+<p>
+  <strong>Credits:</strong>
+  <%= @release.credits %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @release.release_date %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @release.price %>
+</p>
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>
