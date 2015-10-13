@@ -5,7 +5,9 @@ one:
   description: MyText
   credits: MyString
 
+
 two:
   title: MyString
   description: MyText
   credits: MyString
+  release_id: 2

@@ -12,6 +12,10 @@ class TrackTest < ActiveSupport::TestCase
 	  assert_not track.valid?
 	end
 
-	
+	test "should have an associated release id"  do
+	  track = Track.create( release_id: 1)
+	  assert_not track.valid?
+	end
+
 
 end
