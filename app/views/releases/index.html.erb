@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Releases</h1>
+<br>
 
-<table>
+<%= link_to 'New Release', new_release_path, class: 'btn btn-primary' %>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -24,14 +26,11 @@
         <td><%= release.credits %></td>
         <td><%= release.release_date %></td>
         <td><%= release.price %></td>
-        <td><%= link_to 'Show', release %></td>
-        <td><%= link_to 'Edit', edit_release_path(release) %></td>
-        <td><%= link_to 'Destroy', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', release, class: 'btn btn-success' %></td>
+        <td><%= link_to 'Edit', edit_release_path(release), class: 'btn btn-warning' %></td>
+        <td><%= link_to 'Destroy', release, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Release', new_release_path %>
